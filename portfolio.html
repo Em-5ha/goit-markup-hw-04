@@ -20,7 +20,7 @@
     <header class="header">
         <div class="container">
             <nav class="menu">
-                <a href="./index.html" class="logo"> <span class="accent">Web</span><span>Studio</span>
+                <a href="./index.html" class="logo" aria-label="Логотип"> <span class="accent">Web</span><span>Studio</span>
                 </a>
                 <ul class="list-no-style">
                     <li><a class="link" href="./index.html">Студия</a></li>
@@ -30,11 +30,19 @@
             </nav>
             <ul class="list-no-style contacts">
                 <li>
-                    <address class="address"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <address class="address"><a class="link" href="mailto:info@devstudio.com">
+                            <svg class="header-icon" width="20px" height="16px">
+                                <use href="./images/sprite.svg#envelope"></use>
+                            </svg>
+                            info@devstudio.com</a>
                     </address>
                 </li>
                 <li>
-                    <address class="address"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    <address class="address"><a class="link" href="tel:+380961111111">
+                            <svg class="header-icon" width="16px" height="16px">
+                                <use href="./images/sprite.svg#smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
                     </address>
                 </li>
             </ul>
@@ -54,47 +62,47 @@
                 <ul class="list-no-style content">
                     <li>
                         <img src="./images/portfolio-img1.jpg" alt="Ноутбук со страницей сайта">
-                        <h3>Технокряк</h3>
+                        <h4>Технокряк</h4>
                         <p>Веб-сайт</p>
                     </li>
                     <li>
                         <img src="./images/portfolio-img2.jpg" alt="Постер с баскетболистами">
-                        <h3>Постер New Orlean vs Golden Star</h3>
+                        <h4>Постер New Orlean vs Golden Star</h4>
                         <p>Дизайн</p>
                     </li>
                     <li>
                         <img src="./images/portfolio-img3.jpg" alt="Рекламный постер ресторана">
-                        <h3>Ресторан Seafood</h3>
+                        <h4>Ресторан Seafood</h4>
                         <p>Приложение</p>
                     </li>
                     <li>
                         <img src="./images/portfolio-img4.jpg" alt="Наушники">
-                        <h3>Проект Prime</h3>
+                        <h4>Проект Prime</h4>
                         <p>Маркетинг</p>
                     </li>
                     <li>
                         <img src="./images/portfolio-img5.jpg" alt="Две красивые коробки">
-                        <h3>Проект Boxes</h3>
+                        <h4>Проект Boxes</h4>
                         <p>Приложение</p>
                     </li>
                     <li>
                         <img src="./images/portfolio-img6.jpg" alt="Экран монитора с заставкой сайта">
-                        <h3>Inspiration has no Borders</h3>
+                        <h4>Inspiration has no Borders</h4>
                         <p>Веб-сайт</p>
                     </li>
                     <li>
                         <img src="./images/portfolio-img7.jpg" alt="Развороь книги">
-                        <h3>Издание Limited Edition</h3>
+                        <h4>Издание Limited Edition</h4>
                         <p>Дизайн</p>
                     </li>
                     <li>
                         <img src="./images/portfolio-img8.jpg" alt="Этикетка">
-                        <h3>Проект LAB</h3>
+                        <h4>Проект LAB</h4>
                         <p>Маркетинг</p>
                     </li>
                     <li>
                         <img src="./images/portfolio-img9.jpg" alt="Ноутбук с заставкой сайта и печатающими руками">
-                        <h3>Growing Business</h3>
+                        <h4>Growing Business</h4>
                         <p>Приложение</p>
                     </li>
 
@@ -105,19 +113,50 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <a href="./index.html" class="logo"><span class="accent">Web</span><span>Studio</span> </a>
-            <ul class="list-no-style">
-                <li>
-                    <address class="address city">г. Киев, пр-т Леси Украинки, 26</address>
-                </li>
-                <li>
-                    <address class="address"> <a class="link" href="mailto:info@example.com">info@example.com</a>
-                    </address>
-                </li>
-                <li>
-                    <address class="address"> <a class="link" href="tel:+380991111111">+38 099 111 11 11</a></address>
-                </li>
-            </ul>
+            <div class="left-part">
+                <a href="./index.html" class="logo"><span class="accent">Web</span><span>Studio</span> </a>
+                <ul class="list-no-style">
+                    <li>
+                        <address class="address city">г. Киев, пр-т Леси Украинки, 26</address>
+                    </li>
+                    <li>
+                        <address class="address"> <a class="link" href="mailto:info@example.com">info@example.com</a>
+                        </address>
+                    </li>
+                    <li>
+                        <address class="address"> <a class="link" href="tel:+380991111111">+38 099 111 11 11</a></address>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-part">
+                <h4>присоединяйтесь</h4>
+                <ul class="list-no-style">
+                    <li><a class="social-link" href="#">
+                            <svg class="social-icon" width="20px" height="20px">
+                                <use href="./images/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a class="social-link" href="#">
+                            <svg class="social-icon" width="20px" height="20px">
+                                <use href="./images/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a class="social-link" href="#">
+                            <svg class="social-icon" width="20px" height="20px">
+                                <use href="./images/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a class="social-link" href="#">
+                            <svg class="social-icon" width="20px" height="20px">
+                                <use href="./images/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
