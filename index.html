@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -19,7 +20,7 @@
                 <a href="./index.html" class="logo" aria-label="Логотип">  <span class="accent">Web</span><span>Studio</span>
                 </a>
                 <ul class="list-no-style">
-                    <li><a class="link" href="./index.html">Студия</a></li>
+                    <li><a class="link active" href="./index.html">Студия</a></li>
                     <li><a class="link" href="./portfolio.html">Портфолио</a></li>
                     <li><a class="link" href="#">Контакты</a></li>
                 </ul>
@@ -49,7 +50,7 @@
         <section class="tagline">
             <div class="container">
                 <h1>Эффективные решения <br> для вашего бизнеса</h1>
-                <button class="order-service-btn" type="button">Заказать услугу</button>
+                <button type="button" class="order-service-btn" data-modal-open  >Заказать услугу</button>
             </div>
         </section>
         <!-- h2 features -->
@@ -79,10 +80,31 @@
         <section class="occupation section">
             <div class="container">
                 <h2>Чем мы занимаемся</h2>
-                <ul class="list-no-style">
-                    <li><img src="./images/doing-img1.jpg" alt="Печать на клавиатуре" width="370"></li>
-                    <li><img src="./images/doing-img2.jpg" alt="Смартфон подключают к ноутбуку" width="370"></li>
-                    <li><img src="./images/doing-img3.jpg" alt="Палитра выбора цветов на экране планшета" width="370"></li>
+                <ul class="list-no-style business-list">
+                    <li class="business-item">
+                        <div class="business-thumb">
+                            <img src="./images/doing-img1.jpg" alt="Печать на клавиатуре" width="370" height="294">
+                            <div class="business-label">
+                                <h3>Десктопные приложения</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="business-item">
+                        <div class="business-thumb">
+                            <img src="./images/doing-img2.jpg" alt="Смартфон подключают к ноутбуку" width="370">
+                            <div class="business-label">
+                                <h3>Мобильные приложения</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="business-item">
+                        <div class="business-thumb">
+                            <img src="./images/doing-img3.jpg" alt="Палитра выбора цветов на экране планшета" width="370">
+                            <div class="business-label">
+                                <h3>Дизайнерские решения</h3>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -319,5 +341,16 @@
             </div>
         </div>
     </footer>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+            <!-- <svg class="social-icon" width="20px" height="20px">
+                <use href="./images/svg/close.svg"></use>
+            </svg> -->
+            <img src="./images/svg/close.svg" alt="Иконка Close" width="30px" height="30px">
+        </button>
+    </div>
+</div>
+<script src="./modal.js"></script>
 </body>
 </html>
